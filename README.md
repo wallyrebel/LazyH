@@ -5,26 +5,28 @@ rescuing, caring for, and rehoming dogs across Tippah County.
 
 ## Site
 
-The website lives in [`website/`](website/) and is plain HTML/CSS/JS — no build step.
+The site is plain HTML/CSS/JS at the repo root — no build step.
 
-- `website/index.html` — page structure & content
-- `website/styles.css` — styling (responsive)
-- `website/script.js` — mobile menu, scroll & reveal effects
-- `website/assets/` — logo, property photo, and adoption application (PDF)
+- `index.html` — page structure & content
+- `styles.css` — styling (responsive)
+- `script.js` — mobile menu, scroll & reveal effects
+- `assets/` — logo, property photo, and adoption application (PDF)
 
 ### View locally
 
-Open `website/index.html` in any browser, or serve the folder:
+Open `index.html` in any browser, or serve the folder:
 
 ```bash
-python -m http.server 8765 --directory website
+python -m http.server 8765
 # then visit http://localhost:8765
 ```
 
-### Deploy (free options)
+### Deploy
 
-- **Netlify Drop** — drag the `website/` folder onto <https://app.netlify.com/drop>
-- **GitHub Pages** — Settings → Pages → serve from `/website` (or move files to root)
+- **Cloudflare Pages** — connect this repo. No build command; set the
+  **build output directory** to `/` (root). `index.html` is at the root.
+- **Netlify Drop** — drag the repo folder onto <https://app.netlify.com/drop>
+- **GitHub Pages** — Settings → Pages → serve from `main` / root
 
 ## Contact
 
